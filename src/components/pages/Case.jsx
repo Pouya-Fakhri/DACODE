@@ -1,5 +1,5 @@
-import Baner from "../../Baner";
-import CaseCard from "../../CaseCard";
+import Baner from "../Baner";
+import CaseCard from "../CaseCard";
 
 function Case() {
   const banersData = [
@@ -16,22 +16,22 @@ function Case() {
   ];
   const caseData = [
     {
-        head:"Lunar Strategy SaaS Marketing Agency - Rebranding of website",
-        body:"We got a mission from Lunar Strategy to rebrand their website for their SaaS marketing agency. Their vision was to make a clean website and playing with their Lunar and Space theme, this mean using icon and symbols on the website that went with their branding and where they wanted to position themselves."
+      head: "Lunar Strategy SaaS Marketing Agency - Rebranding of website",
+      body: "We got a mission from Lunar Strategy to rebrand their website for their SaaS marketing agency. Their vision was to make a clean website and playing with their Lunar and Space theme, this mean using icon and symbols on the website that went with their branding and where they wanted to position themselves.",
     },
     {
-        head:"Lunar Strategy SaaS Marketing Agency - Rebranding of website",
-        body:"We got a mission from Lunar Strategy to rebrand their website for their SaaS marketing agency. Their vision was to make a clean website and playing with their Lunar and Space theme, this mean using icon and symbols on the website that went with their branding and where they wanted to position themselves."
+      head: "Lunar Strategy SaaS Marketing Agency - Rebranding of website",
+      body: "We got a mission from Lunar Strategy to rebrand their website for their SaaS marketing agency. Their vision was to make a clean website and playing with their Lunar and Space theme, this mean using icon and symbols on the website that went with their branding and where they wanted to position themselves.",
     },
     {
-        head:"Lunar Strategy SaaS Marketing Agency - Rebranding of website",
-        body:"We got a mission from Lunar Strategy to rebrand their website for their SaaS marketing agency. Their vision was to make a clean website and playing with their Lunar and Space theme, this mean using icon and symbols on the website that went with their branding and where they wanted to position themselves."
+      head: "Lunar Strategy SaaS Marketing Agency - Rebranding of website",
+      body: "We got a mission from Lunar Strategy to rebrand their website for their SaaS marketing agency. Their vision was to make a clean website and playing with their Lunar and Space theme, this mean using icon and symbols on the website that went with their branding and where they wanted to position themselves.",
     },
     {
-        head:"Lunar Strategy SaaS Marketing Agency - Rebranding of website",
-        body:"We got a mission from Lunar Strategy to rebrand their website for their SaaS marketing agency. Their vision was to make a clean website and playing with their Lunar and Space theme, this mean using icon and symbols on the website that went with their branding and where they wanted to position themselves."
+      head: "Lunar Strategy SaaS Marketing Agency - Rebranding of website",
+      body: "We got a mission from Lunar Strategy to rebrand their website for their SaaS marketing agency. Their vision was to make a clean website and playing with their Lunar and Space theme, this mean using icon and symbols on the website that went with their branding and where they wanted to position themselves.",
     },
-  ]
+  ];
 
   return (
     <div>
@@ -40,8 +40,10 @@ function Case() {
         body={banersData[0].body}
         email={banersData[0].email}
       />
-      <div className="flex flex-col items-center gap-[130px] my-[130px]" >
-        {caseData.map((items)=> <CaseCard head={items.head} body={items.body} />)}
+      <div className="flex flex-col items-center gap-[130px] my-[130px]">
+        {caseData.map((items) => (
+          <CaseCard head={items.head} body={items.body} />
+        ))}
       </div>
     </div>
   );

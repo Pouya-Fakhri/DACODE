@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 function Nav() {
   return (
-    <nav className="w-full flex justify-between items-center px-40 py-[40px]">
+    <nav className=" flex justify-between items-center px-40 py-[40px]">
       <div className="logo text-[30px] font-dm font-bold">
         DACODE
       </div>

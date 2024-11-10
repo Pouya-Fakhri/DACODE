@@ -1,5 +1,5 @@
-import Baner from "../../Baner";
-import BlogCards from "../../BlogCards";
+import Baner from "./Baner";
+import BlogCards from "./BlogCards";
 
 function Blog() {
   const banerData = {
@@ -59,14 +59,16 @@ function Blog() {
   ];
 
   return (
-    <div>
+    <div className="w-full" >
       <Baner
         head={banerData.head}
         body={banerData.body}
         email={banerData.email}
       />
-      <div className="flex flex-wrap justify-center gap-5 my-[13px]" >
-        {cardData.map((items)=><BlogCards head={items.head} body={items.body} />)}
+      <div className="flex flex-wrap justify-center gap-5 my-[13px]">
+        {cardData.map((items) => (
+          <BlogCards head={items.head} body={items.body} />
+        ))}
       </div>
     </div>
   );

@@ -1,10 +1,10 @@
-import WordPress from "./assets/icons/WordPress.svg";
-import webSite from "./assets/icons/webSite.svg";
-import webDesign from "./assets/icons/webDesign.svg";
-import magnifyingGlass from "./assets/icons/magnifyingGlass.svg";
-import layers from "./assets/icons/layers.svg";
-import startup from "./assets/icons/startup.svg";
-import round from "./assets/icons/round.svg";
+import WordPress from "../assets/icons/WordPress.svg";
+import webSite from "../assets/icons/webSite.svg";
+import webDesign from "../assets/icons/webDesign.svg";
+import magnifyingGlass from "../assets/icons/magnifyingGlass.svg";
+import layers from "../assets/icons/layers.svg";
+import startup from "../assets/icons/startup.svg";
+import round from "../assets/icons/round.svg";
 import ServicesCard from "./ServicesCard";
 
 function OurServices() {

@@ -1,5 +1,6 @@
-import Baner from "../../Baner";
-import OurServices from "../../OurServices";
+import Baner from "../Baner";
+import OurServices from "../OurServices";
+
 
 function Services() {
   const banersData = [

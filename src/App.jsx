@@ -1,14 +1,14 @@
 import { Route, Router, Routes } from "react-router-dom";
-import Nav from "./Nav";
+import Nav from "./components/Nav";
 import Home from "./components/pages/Home";
-import Footer from "./Footer";
+import Footer from "./components/Footer";
 import Services from "./components/pages/Services";
-import Blog from "./components/pages/Blog";
+import Blog from "./components/Blog";
 import Case from "./components/pages/Case";
 
 function App() {
   return (
-    <main className="w-screen ">
+    <main className="w-screen overflow-hidden ">
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />

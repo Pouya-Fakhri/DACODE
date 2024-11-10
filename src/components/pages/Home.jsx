@@ -3,10 +3,10 @@ import ideaImage from "../../assets/images/ideaImage.png";
 import cardImage1 from "../../assets/images/cardimage1.jpg";
 import cardImage2 from "../../assets/images/cardimage2.jpg";
 import cardImage3 from "../../assets/images/cardimage3.jpg";
-import OurServices from "../../OurServices";
 import round from "../../assets/icons/round.svg";
-import GreatWorkCoard from "../../GreatWorkCoard";
-import Baner from "../../Baner";
+import GreatWorkCoard from "../GreatWorkCoard";
+import Baner from "../Baner";
+import OurServices from "../OurServices";
 
 function Home() {
   const greateWork = [
@@ -24,13 +24,13 @@ function Home() {
     },
   ];
   const banerData = {
-    head:"Interested to work with us ?",
-    body:"Send a line here get and update daily",
-    email:true
-  }
+    head: "Interested to work with us ?",
+    body: "Send a line here get and update daily",
+    email: true,
+  };
 
   return (
-    <div className=" w-full  ">
+    <div className=" w-full overflow-x-hidden ">
       <div className="hero  flex items-center pl-40  mt-[50px] relative overflow-hidden">
         <div className="textContainer w-1/2  flex flex-col gap-[20px]">
           <h1 className="font-titre font-black text-[58px] text-[#292525] leading-[112%] ">
@@ -67,15 +67,15 @@ function Home() {
         <h2 className="font-titre font-bold text-[48px] text-[#292525]">
           Our Great Work
         </h2>
-        <div className="cardContainer flex gap-[36]">
+        <div className="cardContainer flex gap-[36px]">
           {greateWork.map((items) => (
             <GreatWorkCoard image={items.image} text={items.text} />
           ))}
         </div>
-        <div className="bg-[#60E1CB] w-screen h-[46%] absolute -z-10 bottom-0"></div>
+        <div className="bg-[#60E1CB] w-full h-[46%] absolute -z-10 bottom-0"></div>
       </div>
-      <div className="idea w-screen py-[200px] pl-40 relative overflow-hidden">
-        <div className="textContainer">
+      <div className="idea w-full py-[200px] pl-40 relative overflow-hidden">
+        <div className="textContainer overflow-x-hidden">
           <h2 className="font-titre font-bold text-[48px] text-[#292525]">
             Your idea into <span className="text-[#60E1CB]">reality</span>
           </h2>
@@ -131,11 +131,18 @@ function Home() {
               </p>
             </div>
           </div>
-        </div>
-        <img src={ideaImage} alt="" className=" absolute bottom-[-5%] right-0 w-[700px]" />
+        </div >
+        <img
+          src={ideaImage}
+          alt=""
+          className=" absolute bottom-[-5%] right-[1%] w-[700px] "
+        />
       </div>
-      <Baner head={banerData.head} body={banerData.body} email={banerData.email} />
-
+      <Baner
+        head={banerData.head}
+        body={banerData.body}
+        email={banerData.email}
+      />
     </div>
   );
 }

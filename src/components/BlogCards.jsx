@@ -1,10 +1,10 @@
-import cardImage2 from "./assets/images/cardimage2.jpg";
+import cardImage2 from "../assets/images/cardimage2.jpg";
 
 
 function BlogCards({head , body}) {
     
     return(
-        <div className="w-[325px] h-[425px] rounded-[12px]  flex flex-col items-center gap-5 border border-[#60E1CB]" >
+        <div className="w-[300px] h-[425px] rounded-[12px]  flex flex-col items-center gap-5 border border-[#60E1CB]" >
             <img src={cardImage2} alt="" className="" />
             <h2 className="font-titre font-bold text-[18px]" >{head}</h2>
             <p className="font-dm font-medium text-center text-[16px]" >{body}</p>

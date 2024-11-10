@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="w-screen px-40 py-[110px] flex bg-[#60E1CB]" >
+    <footer className=" px-40 py-[110px] flex bg-[#60E1CB]" >
       <div className="logoContainer">
         <h2 className="font-titre font-black text-[32px]" >Logo</h2>
         <p className="font-dm font-medium text-[16px] w-2/3" >
